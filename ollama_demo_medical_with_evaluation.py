@@ -216,7 +216,7 @@ def clean_medical_text(text):
     """
 
     # Remove excessive spaces/newlines
-    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"\s+", " ", text)  # \s+ is a pattern used to match one or more consecutive whitespace characters.
 
     # Extract important sections
     sections = {
